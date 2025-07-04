@@ -13,6 +13,16 @@ size_t ft_strlen(const char *s)
     return (len);
 
 }
+
+int ft_numlen(long num)
+{
+	
+}
+
+int ft_hexlen(unsigned long num)
+{
+
+}
 void ft_putstr(char *s)
 {
     write(1, &s, ft_strlen(s));
