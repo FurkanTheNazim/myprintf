@@ -1,6 +1,4 @@
-#include <stdarg.h>
 #include "ft_printf.h"
-
 
 int ft_format_handler(char specifier, va_list ap)
 {
@@ -47,9 +45,4 @@ int ft_printf(const char *format, ...)
     }
     va_end(ap);
     return(count);
-}
-
-int main()
-{
-    ft_printf("merhaba 42 %s, %d\n", "Istanbul", 2025);
 }

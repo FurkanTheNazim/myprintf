@@ -1,4 +1,4 @@
-
+#include "ft_printf.h"
 int	print_decimal(va_list ap)
 {
 	long	num;
