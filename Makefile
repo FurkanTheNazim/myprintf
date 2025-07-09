@@ -1,4 +1,4 @@
-NAME = ft_printf.a
+NAME = libftprintf.a
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
@@ -14,7 +14,7 @@ SRCS = 	ft_printf.c \
 		ft_print_text.c \
 		ft_print_numbers.c \
 		ft_all_lens.c \
-		ft_putnbrhex.c
+		ft_puthex_fd.c
 
 OBJS = $(SRCS:.c=.o)
 

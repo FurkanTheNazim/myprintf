@@ -13,7 +13,7 @@ int ft_format_handler(char specifier, va_list ap)
     else if (specifier == 'x' || specifier == 'X')
         return (print_hex(ap, specifier));
     else if (specifier == 'u')
-        return (print_unsigned(ap));
+        return (print_hex(ap, specifier));
     else if(specifier == '%')
         return (print_percent());
     return (0);

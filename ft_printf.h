@@ -8,7 +8,7 @@
 
 int		ft_numlen(long n);
 int		ft_hexlen(unsigned long n);
-void	ft_puthex_fd(unsigned long n, char specifier);
+void	ft_puthex_fd(unsigned long n, char specifier, int fd);
 
 int		print_char(va_list ap);
 int		print_string(va_list ap);

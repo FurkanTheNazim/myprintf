@@ -17,7 +17,7 @@ int	print_hex(va_list ap, char specifier)
 
 	num = va_arg(ap, unsigned int);
 	len = ft_hexlen(num);
-	ft_puthex_fd(num, specifier);
+	ft_puthex_fd(num, specifier, 1);
 	return (len);
 }
 
@@ -35,7 +35,7 @@ int	print_pointer(va_list ap)
 	len = 0;
 	ft_putstr_fd("0x", 1);
     len = 2;
-	ft_puthex_fd(p, 'x');
+	ft_puthex_fd(p, 'x', 1);
 	len += ft_hexlen(p);
 	return (len);
 }
