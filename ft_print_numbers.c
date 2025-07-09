@@ -39,3 +39,13 @@ int	print_pointer(va_list ap)
 	len += ft_hexlen(p);
 	return (len);
 }
+int print_unsigned(va_list ap)
+{
+	unsigned long	num;
+	int				len;
+
+	num = va_arg(ap, unsigned int);
+	len = ft_numlen(num);
+	ft_putunsigned_fd(num, 1);
+	return (len);
+}

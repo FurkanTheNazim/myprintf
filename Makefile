@@ -14,7 +14,9 @@ SRCS = 	ft_printf.c \
 		ft_print_text.c \
 		ft_print_numbers.c \
 		ft_all_lens.c \
-		ft_puthex_fd.c
+		ft_puthex_fd.c \
+		ft_put_unsigned_fd.c
+
 
 OBJS = $(SRCS:.c=.o)
 
