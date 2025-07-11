@@ -34,7 +34,7 @@ int	print_pointer(va_list ap)
 	}
 	len = 0;
 	ft_putstr_fd("0x", 1);
-    len = 2;
+	len = 2;
 	ft_puthex_fd(p, 'x', 1);
 	len += ft_hexlen(p);
 	return (len);
